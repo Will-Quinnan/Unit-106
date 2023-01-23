@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <nav>
+        <h1>My Super Awesome Task Manager</h1>
+    </nav>
+    
+    
+    <main class="container">
+        <section class="list-container">LIST
+            <button id="btnToggleForm">Hide Form</button>
+
+        </section>
+
+        <section class="form-container">
+
+            <div class="my-form">
+                <i id="iImportant" class="main-icon fa-regular fa-thumbs-down"></i>
+            </div>
+           
+            <div class="my-form">
+                <label>Title</label>
+                <input id="txtTitle" type="text">
+            </div>
+
+            <div class="my-form">
+                <label>Description</label>
+                <textarea id="txtDescription" rows="3"></textarea>
+            </div>
+
+            <div class="my-form">
+                <label>Due Date</label>
+                <input id="selDueDate" type="datetime-local">
+            </div>
+
+            <div class="my-form">
+                <label>Category</label>
+                <select id="selCategory">
+                    <option>Family</option>
+                    <option>Person</option>
+                    <option>Work</option>
+                </select>
+            </div>
+
+            <div class="my-form">
+                <label>Contact</label>
+                <input id="txtContact" type="text">
+            </div>
+
+            <div class="my-form">
+                <label>Status</label>
+                <select id="selStatus">
+                    <option>Ready</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                    <option>Cancelled</option>
+                </select>
+            </div>
+
+            <div class="my-form">
+                <button id="btnSave" class="btn-save">Save Task</button>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
