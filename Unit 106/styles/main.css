@@ -1,20 +1,37 @@
+html {
+    background-color: #c3dbe2;
+}
 h1 {
     background-color: #212121;
-    color:white;
+    color:rgb(33, 213, 219);
     text-align: center;
 }
 
 .container {
     display: flex;
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/01/14/39/forest-fire-432870_1280.jpg") ;
+    background-repeat:no-repeat;
+    background-size:cover ;
+    height: 96vh;
+    
+
+}
+.container h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .list-container {
     flex: 5;
+    padding: 15px 15px;
+
+    
 }
 
 .form-container {
-    background-color: #fafafa;
-    flex: 3;
+    background-color: #b7cec9a1;
+    flex:3;
+    padding: 10px 30px;
 }
 
 .my-form {
@@ -42,8 +59,50 @@ h1 {
 
 .task {
     display: flex;
+    background-color: #ddddddb4;
+    border:1px solid #272727;
+    padding: 10px;
+    margin: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }
 
 .task label {
     display: block;
+    margin-bottom: 5px;
 }
+
+.task .col1 {
+    flex: 4;
+}
+
+.task .col2 {
+    flex: 1;
+}
+
+.task .col3 {
+    flex: 1;
+}
+.btn-save {
+    background: #97d1c1;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn-save:hover {
+    color: rgb(179, 0, 233);
+    background: #8dd9c0;
+    background-image: -webkit-linear-gradient(top, #8dd9c0, #66f0f2);
+    background-image: -moz-linear-gradient(top, #8dd9c0, #66f0f2);
+    background-image: -ms-linear-gradient(top, #8dd9c0, #66f0f2);
+    background-image: -o-linear-gradient(top, #8dd9c0, #66f0f2);
+    background-image: linear-gradient(to bottom, #8dd9c0, #66f0f2);
+    text-decoration: none;
+  }

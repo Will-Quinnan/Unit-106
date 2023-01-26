@@ -10,7 +10,7 @@ class Task {
         this.status = status;   
         this.important = important;
 
-        this.name = "Sergio";
+        this.name = "Will";
     }
 
 }
